@@ -1,0 +1,98 @@
+.button {
+    font-family: $fontM;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    display: inline-block;
+    transition: 0.2s;
+    border-radius: 2.8rem;
+    padding: 1.85rem 2rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    @include --sm {
+        padding: 1.6rem 2rem;
+    }
+
+    &_fullwidth {
+        width: 100%;
+    }
+
+    &_default {
+        box-shadow: 0 4px 8px 0 rgba(14, 31, 53, 0.08), 0 1px 4px 0 rgba(14, 31, 53, 0.12);
+        background-image: linear-gradient(74deg, var(--orange) -44%, #eeaf2b 114%);
+        color: var(--white);
+
+        // &:hover {
+        //     border-color: var(--primary-hover);
+        //     background-color: var(--primary-hover);
+        //     color: var(--white);
+        // }
+    }
+
+    &_bordered {
+        background-color: transparent;
+        color: var(--white);
+        border: 0.1rem solid var(--yellow);
+        padding: 1.75rem 2rem;
+
+        &:hover {
+            //
+        }
+    }
+
+    // &_simple {
+    //     border: none;
+    //     color: var(--white);
+
+    //     &:hover {
+    //         color: var(--medium);
+    //     }
+
+    //     &.warning {
+    //         color: var(--warn);
+
+    //         &:hover {
+    //             color: var(--warn-hover);
+    //         }
+    //     }
+
+    //     &.primary {
+    //         color: var(--primary);
+
+    //         &:hover {
+    //             color: var(--primary-hover);
+    //         }
+    //     }
+
+    //     & > i {
+    //         font-size: 1.3em;
+    //         line-height: 1;
+    //         display: inline-block;
+
+    //         &:first-child {
+    //             margin-right: 1.6rem;
+    //         }
+    //     }
+    //     &.button_settings {
+    //         display: flex;
+    //         align-items: center;
+
+    //         & > i {
+    //             font-size: 0.6em;
+    //             margin-right: 0.8rem;
+    //         }
+    //     }
+    // }
+
+    &[disabled] {
+        background: gray;
+        pointer-events: none;
+    }
+}
+
+.clipboard {
+    font-size: 2rem;
+    transition: 0.3s;
+}

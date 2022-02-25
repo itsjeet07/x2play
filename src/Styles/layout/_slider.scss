@@ -1,0 +1,79 @@
+.embla-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 0 1.6rem;
+    margin: 0 -1.6rem;
+
+    &:hover {
+        & .embla-slider__btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__item {
+        flex: 0 0 100%;
+        padding-left: 1.6rem;
+    }
+
+    &__btn {
+        color: var(--white);
+        background-color: transparent;
+        width: 3.4rem;
+        height: 3.4rem;
+        line-height: 3.4rem;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        margin-top: calc(-4rem / 2);
+        display: block;
+        outline: none;
+        transition: 0.3s;
+        z-index: 100;
+        font-size: 2rem;
+        opacity: 0;
+        visibility: hidden;
+
+        &_prev {
+            left: 0;
+
+            &:before {
+                content: '\e835';
+                font-family: 'fontello';
+            }
+        }
+        &_next {
+            left: calc(100% - 3.4rem);
+
+            &:before {
+                content: '\e800';
+                font-family: 'fontello';
+            }
+        }
+    }
+}
+
+.cabinet__col_games {
+    & .embla-slider__item {
+        flex: 0 0 50%;
+
+        @include --lg {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+.cabinet__col_referals {
+    & .embla-slider__item {
+        flex: 0 0 25%;
+
+        @include --lg {
+            flex: 0 0 calc(100% / 3);
+        }
+
+        @include --sm {
+            flex: 0 0 50%;
+        }
+    }
+}

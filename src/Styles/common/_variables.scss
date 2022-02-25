@@ -1,0 +1,32 @@
+// Colors
+html {
+    --black: #000000;
+    --black-rgb: 0, 0, 0;
+    --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --bg-color: #1c1b1b;
+    --input-bg: #393737;
+    --input-bg-rgb: 57, 55, 55;
+    --yellow: #ffb700;
+    --yellow-rgb: 255, 183, 0;
+    --orange: #dd6a2a;
+}
+
+// Responsive
+$--xxl: 1679px; //max-width: 1679px;
+$--xl: 1439px; //max-width: 1439px;
+$--lg: 1279px; //max-width: 1279px;
+$--md: 1023px; //max-width: 1023px;
+$--sm: 767px; //max-width: 767px;
+$--xs: 479px; //max-width: 479px;
+
+// Fonts
+$fontM: 'Montserrat', sans-serif;
+$fontD: 'Druk Cyr';
+$fontDT: 'Druk Text Cyr';
+$fontDW: 'Druk Wide Cyr';
+$fontR: 'Roboto Mono', monospace;
+
+.color_yellow {
+    color: var(--yellow);
+}

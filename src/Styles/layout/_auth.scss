@@ -1,0 +1,226 @@
+.auth {
+	display: flex;
+	flex-grow: 1;
+
+	&__sidebar {
+		width: 45rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding-bottom: 8rem;
+		position: relative;
+
+		& .text-logo {
+			opacity: 1;
+			width: auto;
+			position: relative;
+			font-size: 1.6rem;
+		}
+
+		@include --md {
+			display: none;
+		}
+	}
+
+	&__overlay {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: calc(100% + 8rem);
+		height: 100%;
+		border-radius: 5rem;
+		box-shadow: 0rem 0.5rem 4.5rem rgba(var(--black-rgb), 0.35);
+	}
+
+	&__content {
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		padding: 4.8rem;
+
+		@include --sm {
+			padding: 8rem 0 2rem 0;
+		}
+	}
+
+	&__form {
+		text-align: center;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 46rem;
+
+		@include --lg {
+			width: 100%;
+		}
+	}
+
+	&__body-single {
+		display: flex;
+		flex-grow: 1;
+	}
+
+	&__title {
+		font-family: $fontDW;
+		font-size: 2.6rem;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: var(--white);
+
+		@include --xs {
+			font-size: 2rem;
+		}
+	}
+
+	&__link {
+		font-family: $fontM;
+		font-size: 1.6rem;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: var(--yellow);
+		transition: 0.2s;
+
+		&:hover {
+			color: rgba(var(--yellow-rgb), 0.5);
+		}
+	}
+
+	&__referal {
+		visibility: hidden;
+		background-color: #212020;
+		display: inline-block;
+		align-self: center;
+		padding: 1.5rem 4.4rem;
+		border-radius: 0.8rem;
+		font-size: 1.3rem;
+		color: rgba(var(--white-rgb), 0.5);
+
+		& span:last-child {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+.slogan {
+	font-family: $fontM;
+	font-size: 2.8rem;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: var(--white);
+	text-transform: uppercase;
+	margin-top: 1.2rem;
+	position: relative;
+}
+
+.auth-info {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	max-width: 55rem;
+
+	&__wrap {
+		background-color: var(--input-bg);
+		padding: 3.7rem;
+		border-radius: 1.6rem;
+		box-shadow: 0 0.5rem 1.3rem 0 rgba(var(--black-rgb), 0.5);
+		font-family: $fontM;
+		font-style: normal;
+		line-height: normal;
+
+		@include --lg {
+			padding: 3rem;
+		}
+
+		@include --xs {
+			padding: 2rem;
+		}
+	}
+
+	&__before-icon {
+		transform: translateY(-8rem);
+		margin-bottom: -7rem;
+	}
+
+	&__title {
+		font-size: 2.4rem;
+		font-weight: 500;
+		color: var(--white);
+
+		& + .auth-info__icon {
+			margin-top: 5.7rem;
+
+			@include --lg {
+				margin-top: 3rem;
+			}
+
+			@include --xs {
+				margin-top: 1rem;
+			}
+		}
+
+		@include --lg {
+			font-size: 2.2rem;
+		}
+
+		@include --xs {
+			font-size: 2rem;
+		}
+	}
+
+	&__subtitle {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-size: 1.4rem;
+		color: rgba(var(--white-rgb), 0.8);
+	}
+
+	&__text {
+		font-size: 1.2rem;
+		color: rgba(var(--white-rgb), 0.5);
+		margin-bottom: 2.4rem;
+	}
+
+	&__icon {
+		margin-bottom: 2.3rem;
+
+		@include --xs {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__link {
+		& a {
+			font-family: $fontM;
+			font-size: 1.5rem;
+			font-weight: 500;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: var(--yellow);
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&-after {
+		margin-top: 3rem;
+	}
+}

@@ -1,0 +1,42 @@
+.settings {
+	background-color: #222222;
+	padding: 3rem 5rem 6rem 4rem;
+	border-radius: 15px;
+	&__title {
+		font-family: $fontM;
+		font-size: 2.9rem;
+		font-weight: 600;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: var(--white);
+		padding-bottom: 3rem;
+	}
+	&__row {
+	}
+	&__col {
+		background-color: #262626;
+		border-radius: 15px;
+		padding: 2rem 1.5rem 0 1.5rem;
+	}
+	&.info {
+	}
+	.info-row {
+		padding-bottom: 3rem;
+		& .info-text:nth-of-type(odd) {
+			opacity: 0.5;
+		}
+	}
+	.info-label {
+		font-size: 1.9rem;
+		font-family: $fontM;
+		opacity: 0.5;
+		margin-bottom: 16px;
+	}
+	.info-text {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-family: $fontR;
+		margin-bottom: 5px;
+	}
+}

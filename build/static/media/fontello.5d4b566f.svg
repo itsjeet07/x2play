@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="angle-right" unicode="&#xe800;" d="M782 373l-467 467c-7 7-15 10-23 10-9 0-17-3-23-10l-51-50c-6-7-10-14-10-23 0-9 4-16 10-23l394-394-394-394c-6-7-10-14-10-23 0-9 4-16 10-23l51-50c6-7 14-10 23-10 8 0 16 3 23 10l467 467c6 7 10 14 10 23s-4 16-10 23z" horiz-adv-x="1000" />
+
+<glyph glyph-name="close" unicode="&#xe80b;" d="M1000 749l-101 101-399-399-399 399-101-101 399-399-399-399 101-101 399 399 399-399 101 101-399 399 399 399z" horiz-adv-x="1000" />
+
+<glyph glyph-name="plus" unicode="&#xe815;" d="M498-150c52 0 89 36 89 88v336h321c55 0 92 34 92 84 0 50-37 85-92 85h-321v318c0 53-37 89-89 89s-88-36-88-89v-318h-318c-54 0-92-35-92-85 0-50 38-84 92-84h317v-336c0-52 37-88 89-88z" horiz-adv-x="1000" />
+
+<glyph glyph-name="checked" unicode="&#xe81a;" d="M0 314l345-345 662 661-95 94-567-566-251 251z" horiz-adv-x="1000" />
+
+<glyph glyph-name="copy" unicode="&#xe834;" d="M714 671h-607c-59 0-107-47-107-107v-607c0-59 48-107 107-107h607c60 0 107 48 107 107v607c0 60-47 107-107 107z m36-714c0-20-16-36-36-36h-607c-20 0-36 16-36 36v607c0 20 16 36 36 36h607c20 0 36-16 36-36v-607z m143 893h-643c-59 0-107-48-107-107 0-20 16-36 36-36s35 16 35 36 16 36 36 36h643c20 0 36-16 36-36v-643c0-20-16-36-36-36s-36-16-36-35 16-36 36-36c59 0 107 48 107 107v643c0 59-48 107-107 107z" horiz-adv-x="1000" />
+
+<glyph glyph-name="angle-left" unicode="&#xe835;" d="M388 350l394 394c6 7 10 14 10 23 0 9-4 16-10 23l-50 50c-7 7-15 10-24 10-8 0-16-3-23-10l-467-467c-6-7-10-14-10-23 0-9 4-16 10-23l467-467c7-7 15-10 23-10 9 0 17 3 23 10l51 50c6 7 10 14 10 23 0 9-4 16-10 23l-394 394z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

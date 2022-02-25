@@ -1,0 +1,45 @@
+// Import styles
+@import 'common/fonts.scss';
+@import 'common/fontello.scss';
+@import 'common/mixins.scss';
+@import 'common/variables.scss';
+@import 'common/reset.scss';
+@import 'common/base.scss';
+@import 'common/buttons.scss';
+
+@import 'layout/header.scss';
+@import 'layout/general.scss';
+@import 'layout/auth.scss';
+@import 'layout/form.scss';
+@import 'layout/slider.scss';
+@import 'layout/footer.scss';
+
+.ReactModal__Overlay {
+	background-color: rgba($color: #000000, $alpha: 0.7) !important;
+	z-index: 100 !important;
+}
+
+.rate__input {
+	text-align: center;
+	&::placeholder {
+		opacity: 0.5;
+	}
+}
+
+.transaction__btn {
+	font-size: 1.3rem;
+	margin: 0;
+}
+
+.input__btn {
+	position: absolute;
+	right: 46px;
+}
+
+.transaction-card {
+	padding: 2rem;
+}
+
+.disabled__input {
+	color: #fff8;
+}

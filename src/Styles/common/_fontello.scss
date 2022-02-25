@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'fontello';
+	src: url('../../fonts/fontello/fontello.eot?4179135');
+	src: url('../../fonts/fontello/fontello.eot?4179135#iefix')
+			format('embedded-opentype'),
+		url('../../fonts/fontello/fontello.woff2?4179135') format('woff2'),
+		url('../../fonts/fontello/fontello.woff?4179135') format('woff'),
+		url('../../fonts/fontello/fontello.ttf?4179135') format('truetype'),
+		url('../../fonts/fontello/fontello.svg?4179135#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+	font-family: 'fontello';
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+	display: inline-block;
+	text-decoration: inherit;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Custom sizes for icons --> start
+// .icon-files:before {
+//     font-size: 0.8em;
+// }
+
+.icon-angle-right:before {
+	content: '\e800';
+} /* '' */
+.icon-close:before {
+	content: '\e80b';
+} /* '' */
+.icon-plus:before {
+	content: '\e815';
+} /* '' */
+.icon-checked:before {
+	content: '\e81a';
+} /* '' */
+.icon-copy:before {
+	content: '\e834';
+} /* '' */
+.icon-angle-left:before {
+	content: '\e835';
+} /* '' */

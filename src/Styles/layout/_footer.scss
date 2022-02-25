@@ -1,0 +1,186 @@
+.footer {
+    &__wrap {
+        padding: 8rem 0;
+
+        @include --sm {
+            padding: 5rem 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+
+        &:last-child {
+            margin-bottom: 0;
+            align-items: flex-end;
+        }
+
+        @include --sm {
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include --xs {
+            flex-direction: column;
+            align-items: center;
+
+            &:last-child {
+                align-items: center;
+            }
+        }
+    }
+
+    &__col {
+        &_spacer {
+            flex-grow: 1;
+            padding: 0 10rem;
+
+            @include --lg {
+                padding: 0 7rem;
+            }
+
+            @include --md {
+                display: none;
+            }
+        }
+
+        @include --xs {
+            margin-bottom: 2rem;
+            text-align: center;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.support {
+    display: flex;
+    flex-direction: column;
+
+    & > span {
+        opacity: 0.5;
+        font-family: $fontM;
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.175rem;
+        color: var(--white);
+        text-transform: uppercase;
+        margin-top: 2.2rem;
+
+        @include --sm {
+            margin-top: 1.5rem;
+            font-size: 1rem;
+        }
+    }
+
+    & img {
+        @include --sm {
+            max-width: 5rem;
+            height: auto;
+        }
+    }
+}
+
+.version {
+    font-family: $fontM;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.175rem;
+    text-align: center;
+    color: var(--white);
+    opacity: 0.5;
+}
+
+.copyright {
+    font-family: $fontM;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--white);
+    opacity: 0.5;
+    margin-bottom: 0.8rem;
+}
+
+.politic-link {
+    color: var(--white);
+    opacity: 0.5;
+    font-family: $fontM;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-spacer {
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgba($color: var(--white-rgb), $alpha: 0.2);
+    margin-bottom: 0.9rem;
+}
+
+.footer-nav {
+    text-align: right;
+
+    @include --xs {
+        text-align: center;
+    }
+
+    &__item {
+        margin-bottom: 2.2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include --sm {
+            margin-bottom: 1.5rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__link {
+        font-family: $fontM;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--white);
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @include --sm {
+            font-size: 1.4rem;
+        }
+    }
+}
